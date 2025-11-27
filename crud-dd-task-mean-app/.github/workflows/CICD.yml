@@ -19,21 +19,22 @@ jobs:
       - name: Build & Push Backend
         run: |
           cd backend
-          docker build -t ${{ secrets.sachinace033 }}/fsmean-backend:latest .
-          docker push ${{ secrets.sachinace033 }}/fsmean-backend:latest
+          docker build -t ${{ secrets.sachinace033 }}/mean-backend:latest .
+          docker push ${{ secrets.sachinace033 }}/mean-backend:latest
 
       - name: Build & Push Frontend
         run: |
           cd frontend
-          docker build -t ${{ secrets.sachinace033 }}/fsmean-frontend:latest .
-          docker push ${{ secrets.sachinace033 }}/fsmean-frontend:latest
+          docker build -t ${{ secrets.sachinace033 }}/mean-frontend:latest .
+          docker push ${{ secrets.sachinace033 }}/mean-frontend:latest
 
       - name: Deploy to EC2
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.184.72.133.227 }}
           username: ubuntu
-          key: ${{ secrets.MIIEpQIBAAKCAQEAwQxCK2u/NU4Y6RcUJaQs8yOpxr5IpqxYQe7+XKxMDAXgi5sb
+          key: ${{ secrets.-----BEGIN RSA PRIVATE KEY-----
+MIIEpQIBAAKCAQEAwQxCK2u/NU4Y6RcUJaQs8yOpxr5IpqxYQe7+XKxMDAXgi5sb
 mv5ySibUufL6JbT9xGIUrfLFzZ3bNuXSxTX6/YW8xS0I2x5uG/mEFcki3Us+V5qh
 1BzNOffJovIUOGVdxE2HDH2C0YDGLPsa/CAwzNgy2UIskDPItu29m73dGgtJZ+i+
 rWXneduqwBVQPi5v4BDPJcdAJ8/vdhIcNNgxgZwxqZAEhtwfPpTmlXrzq2Habisq
@@ -57,9 +58,10 @@ WHYpLbl51SgmI7GqkyVMJOp96NNgDDqFREVJbVoXpRThzEzNLvNIA7RfQRtm+1G9
 bUv2Md0WnGtGHvY14Z1jsMloQqzY1ukxU0EXm/1dg5COmwpW/wpUBPrN4XwP4kHb
 oTwtoLtxAoGARj3QqDGOul8WTTgRscxfklmbz4eS+17ai6mcPqpIiW205og/zTfG
 dH3v9ITk7h9KBB0kmDQK02I8CuFIrZ7WMik/uvWx/4yzG/h2naQriLl+yzbj62wX
-ojK60P6MLOlBLymP7ntYmx9YhBxCdwPeHPJi08Lsy5r4oxnM/JwgRX8= }}
+ojK60P6MLOlBLymP7ntYmx9YhBxCdwPeHPJi08Lsy5r4oxnM/JwgRX8=
+-----END RSA PRIVATE KEY----- }}
           script: |
-            cd /MEAN-app-devops-assignment/crud-dd-task-mean-app/
+            cd MEAN-app-devops-assignment/crud-dd-task-mean-app/
             git pull origin main
             docker-compose down
             docker-compose pull

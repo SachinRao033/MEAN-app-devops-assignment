@@ -178,14 +178,14 @@ Create File: `.github/workflows/cicd.yml`
 
 |                   Description                      |   File / Link |
 |----------------------------------------------------|---------------|
-|  Application running (list view)                   |  screenshots/ |
-|  Docker Compose up success                         |  screenshots/docker-compose.png |
-|  Docker ps (all containers running)                |  screenshots/docker-ps.png |
-|  Docker Hub images                                 |  screenshots/dockerhub.png |
-|  GitHub Actions CI/CD success                      |  screenshots/github-actions.png |
-|  AWS EC2 instance details                          |  screenshots/aws-ec2.png |
-|  Security group (port 80 open)                     |  screenshots/security-group.png |
-|  Nginx reverse proxy config                        |  screenshots/nginx-config.png |
+|  Application running (list view)                   |  screenshots/App running.png |
+|  Docker Compose up success                         |  screenshots/Docker Compose.png |
+|  Docker ps (all containers running)                |  screenshots/Docker ps.png |
+|  Docker Hub images                                 |  screenshots/Docker hub images.png |
+|  GitHub Actions CI/CD success                      |  screenshots/Github Deployment, 2 , 3.png |
+|  AWS EC2 instance details                          |  screenshots/AWS EC2 instance.png |
+|  Security group (port 80 open)                     |  screenshots/Security Group.png |
+|  Nginx reverse proxy config                        |  screenshots/Nginx reverse proxy config.png |
 
 ---
 

@@ -25,3 +25,27 @@ Run `ng serve --port 8081`
 You can modify the `src/app/services/tutorial.service.ts` file to adjust how the frontend interacts with the backend.
 
 Navigate to `http://localhost:8081/`
+
+----
+# MEAN CRUD App - DevOps Assignment
+
+## Project Setup
+- Follow original README instructions for local setup.
+- Deploy: `docker-compose up -d` on VM.
+
+## Deployment Instructions
+1. Clone repo: `git clone <your-repo-url>`
+2. On VM: `cd MEAN-app-devops-assignment/crud-dd-task-mean-app`
+3. Run: `docker-compose up -d`
+4. Access: http://<vm-ip>
+
+## CI/CD
+- GitHub Actions automates build, push, and deploy on push to `main`.
+
+## Screenshots
+- CI/CD Run: ![cicd](screenshots/cicd.png)
+- Docker Build: ![build](screenshots/build.png)
+- App UI: ![ui](screenshots/ui.png)
+- Docker PS: ![docker-ps](screenshots/docker-ps.png)
+- Nginx Config: ![nginx](screenshots/nginx.png)
+- EC2 Security Group: ![ec2](screenshots/ec2.png)

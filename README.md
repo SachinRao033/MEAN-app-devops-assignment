@@ -37,7 +37,8 @@ Navigate to `http://localhost:8081/`
 1. Clone repo: `git clone <your-repo-url>`
 2. On VM: `cd MEAN-app-devops-assignment/crud-dd-task-mean-app`
 3. Run: `docker-compose up -d`
-4. Access: http://<vm-ip>
+4.# Discover Dollar DevOps Assignment - LIVE URL
+**Application is live here:** http://34.201.144.60
 
 ## CI/CD
 - GitHub Actions automates build, push, and deploy on push to `main`.
